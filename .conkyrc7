@@ -1,0 +1,52 @@
+alignment bottom_left
+background yes
+border_width 0
+cpu_avg_samples 2
+default_color ffffff
+draw_outline no
+draw_borders no
+draw_shades no
+use_xft yes
+xftfont RalewayRegular:size=8
+gap_x 420
+gap_y 0
+
+# size of text area
+minimum_size 140 140
+maximum_width 140
+max_text_width 140
+
+net_avg_samples 2
+no_buffers yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+own_window yes
+own_window_transparent yes
+own_window_class Conky
+own_window_type normal
+own_window_hints undecorated,sticky,skip_taskbar,skip_pager,below
+stippled_borders 0
+update_interval 1.0
+uppercase no
+use_spacer none
+show_graph_scale no
+show_graph_range no
+default_color 2e3138
+
+# Use double buffering (reduces flicker, may not work for everyone)
+double_buffer yes
+
+own_window_colour 6652a2
+update_interval 600
+
+TEXT
+${voffset 14}
+${font RalewayRegular:size=10}FileSystem$font
+#${voffset 2}
+root
+${fs_used /} of ${fs_size /}
+${fs_bar 5, 90 /}${goto 100}$fs_used_perc%
+home
+${fs_used /home} of ${fs_size /home}
+${fs_bar 5, 90 /home}${goto 100}$fs_used_perc%
