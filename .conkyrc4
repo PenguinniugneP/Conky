@@ -1,0 +1,55 @@
+alignment middle_right
+background yes
+border_width 0
+cpu_avg_samples 2
+default_color ffffff
+default_outline_color black
+default_shade_color black
+draw_outline no
+draw_borders no
+draw_shades no
+use_xft yes
+xftfont RalewayRegular:size=8
+gap_x 20
+gap_y -110
+
+# size of text area
+minimum_size 260 100
+maximum_width 240
+max_text_width 240
+
+net_avg_samples 2
+no_buffers yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+own_window yes
+own_window_transparent yes
+own_window_class Conky
+own_window_type normal
+own_window_hints undecorated,sticky,skip_taskbar,skip_pager,below
+stippled_borders 0
+update_interval 1.0
+uppercase no
+use_spacer none
+show_graph_scale no
+show_graph_range no
+
+# Use double buffering (reduces flicker, may not work for everyone)
+double_buffer yes
+
+own_window_colour e19e19
+default_color bc6601
+
+
+TEXT
+${voffset -0}
+${font RalewayRegular:size=10}CPU & Mem$font
+CPU 
+${color bc6601}${cpugraph 10, 60 bc6601 bc6601}$color${goto 70}$cpu%
+MEM 
+${membar 10, 60}${goto 70}$memperc%
+#using 
+#$mem of $memmax
+SWAP 
+${swapbar 10, 60}${goto 70}$swapperc%
