@@ -1,0 +1,9 @@
+sleep 2                            
+conky -c ~/.conkyrc1 &   
+conky -c ~/.conkyrc2 &
+conky -c ~/.conkyrc3 &
+conky -c ~/.conkyrc4 &
+conky -c ~/.conkyrc5 &
+conky -c ~/.conkyrc6 &
+conky -c ~/.conkyrc7 &
+conky -c ~/.conkyrc8 &
